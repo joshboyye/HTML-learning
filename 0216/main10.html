@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>이미지 변형 지정하기</title>
+    </head>
+<style>
+    .rose{
+        transform: rotateZ(10deg);
+    }
+    .ltop .rose{
+        transform: left top;
+    }
+    .rtop .rose{
+        transform-origin:left top ;
+    }
+    .lbottom .rose{
+        transform-origin: left bottom;
+    }
+    .rbottom .rose{
+        transform-origin: right bottom;
+    }
+</style>
+<body>
+    <dic class="origin">
+        <div class="ltop"><img src="bus.jpg" class="rose"></div>
+    </dic>
+    <dic class="origin">
+        <div class="rtop"><img src="bus.jpg" class="rose"></div>
+    </dic>
+    <dic class="origin">
+        <div class="lbottom"><img src="bus.jpg" class="rose"></div>
+    </dic>
+    <dic class="origin">
+        <div class="rbottom"><img src="bus.jpg" class="rose"></div>
+    </dic>
+</body>
+</html>

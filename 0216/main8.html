@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>3D 회전하기</title>
+    </head>
+<style>
+    .origin{
+        perspective: 200px
+    }
+    .rotatex{
+        transform: rotateX(45deg);
+    }
+    .rotatey{
+        transform: rotate(45deg);
+    }
+    .rotatez{
+        transform: rotateZ(45deg);
+    }
+    .rotatexyz{
+        transform: rotate3d(3.5,1.2,-1.5,45deg);
+    }
+</style>
+<body>
+    <div class="origin">
+        <div class="rotatex"><img src="bus.jpg" alt=""></div>
+    </div>
+    <div class="origin">
+        <div class="rotatey"><img src="bus.jpg" alt=""></div>
+    </div>
+    <div class="origin">
+        <div class="rotatexyz"><img src="bus.jpg" alt=""></div>
+    </div>
+</body>
+</html>

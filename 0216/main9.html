@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>x축과 y축으로 이미지 왜곡하기</title>
+    </head>
+<style>
+    .skewx:hover{
+        transform:skewX(30deg);
+    }
+    .skewy:hover{
+        transform: skewY(15deg);
+    }
+    .skewxy:hover{
+        transform: skew(-25deg,-15deg);
+    }
+</style>
+<body>
+    <div class="origin">
+        <div class="skewx"><img src="bus.jpg"></div>
+    </div>
+    <div class="origin">
+        <div class="skewY"><img src="bus.jpg"></div>
+    </div>
+    <div class="origin">
+        <div class="skewxy"><img src="bus.jpg"></div>
+    </div>
+</body>
+</html>

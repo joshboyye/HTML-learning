@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title> li 옆에 내용 표시하기 </title>
+    <meta charset="utf-8">
+</head>
+<style>
+    ul li{
+        margin: 15px;
+    }
+    li.hot::after{
+        content: "NEW!!";
+        font-size: x-small;
+        padding: 2px 4px;
+        margin: 0 10px;
+        border-radius: 2px;
+        background: #f00;
+        color:#FFF;
+    }
+</style>
+<body>
+    <li class="hot">제품 A</li>
+    <li>제품 B</li>
+    <li>제품 C</li>
+    <li class="hot">제품 D</li>
+</body>
+</html>
